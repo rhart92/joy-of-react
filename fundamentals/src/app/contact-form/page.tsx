@@ -15,7 +15,7 @@ export default function Wrapper() {
   )
 }
 
-export function ContactForm() {
+function ContactForm() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [status, setStatus] = useState<Status>('idle')

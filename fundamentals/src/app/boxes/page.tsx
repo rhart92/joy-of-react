@@ -59,7 +59,6 @@ function Boxes(props: {
   boxes: { id: string; flex: number; backgroundClass: string }[]
 }) {
   const { boxes } = props
-  console.log('Boxes re-rendering...')
   return (
     <div className="flex gap-16">
       {boxes.map((box) => {

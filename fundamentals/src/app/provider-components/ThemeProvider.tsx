@@ -20,6 +20,9 @@ export const ThemeContext = React.createContext<ThemeContextType>({
 
 function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = React.useState<Theme>(() => {
+    if (typeof window === 'undefined') {
+      return 'light'
+    }
     const theme = window.localStorage.getItem('color-theme')
     if (theme !== 'light' && theme !== 'dark') {
       return 'light'

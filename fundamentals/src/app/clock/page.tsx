@@ -67,7 +67,6 @@ const ClockToggle = React.memo(function ClockToggle(props: {
   showClock: boolean
 }) {
   const { showClock } = props
-  console.log('Clock toggle rendering...')
   return (
     <button
       onClick={props.handleToggle}

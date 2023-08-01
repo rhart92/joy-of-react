@@ -1,4 +1,6 @@
 'use client'
+import React from 'react'
+
 import { useId, useState } from 'react'
 
 export default function BasicLogin() {
@@ -25,7 +27,7 @@ export default function BasicLogin() {
   )
 }
 
-export function LoginForm(props: { onSubmit?: () => void }) {
+function LoginForm(props: { onSubmit?: () => void }) {
   const [userName, setUserName] = useState('')
   const [password, setPassword] = useState('')
 

@@ -2,6 +2,8 @@
 
 // TODO: Look at https://tinkersynth.com/ for inspiration on generative art.
 import _ from 'lodash'
+import React from 'react'
+
 import { useState } from 'react'
 // TODO: Build something like https://www.joshwcomeau.com/gradient-generator/
 // TODO: Skim through https://daveceddia.com/javascript-references/
@@ -89,7 +91,7 @@ export default function App() {
   )
 }
 
-export const normalize = (
+const normalize = (
   number: number,
   currentScaleMin: number,
   currentScaleMax: number,
@@ -105,7 +107,7 @@ export const normalize = (
 }
 
 // TODO: Learn math for generting these points of the polygon
-export const convertPolarToCartesian = ([angle, radius]: [number, number]) => {
+const convertPolarToCartesian = ([angle, radius]: [number, number]) => {
   const x = radius * Math.cos(angle)
   const y = radius * Math.sin(angle)
 
@@ -142,7 +144,7 @@ function Circle(props: {
   return <circle cx={cx} cy={cy} r={radius} stroke={stroke} strokeWidth={2} />
 }
 
-export const COLORS_BY_THEME: Record<
+const COLORS_BY_THEME: Record<
   string,
   { name: string; background: string; lineColors: string[] }
 > = {

@@ -22,6 +22,10 @@ export default function DarkMode() {
   // light no preference is set.
   // TIL: Localstorage ONLY stores strings so be careful.
   const [mode, setMode] = useState<'light' | 'dark'>(() => {
+    // Default to light for SSR
+    if (typeof window === 'undefined') {
+      return 'light'
+    }
     const mode = window.localStorage.getItem(localStorageKeys.isDarkMode)
     if (mode && (mode === 'light' || mode === 'dark')) {
       return mode
