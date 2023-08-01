@@ -9,9 +9,7 @@ function Counter({
   count: number
   setCount: (n: number) => void
 }) {
-  const { favoriteColor, setFavoriteColor } = React.useContext(
-    FavoriteColorContext
-  )
+  const { favoriteColor } = React.useContext(FavoriteColorContext)
 
   return (
     <div
@@ -20,7 +18,12 @@ function Counter({
         backgroundColor: favoriteColor,
       }}
     >
-      <button className='p-2 bg-gray-200 rounded m-4 text-black' onClick={() => setCount(count + 1)}>Count: {count}</button>
+      <button
+        className="p-2 bg-gray-200 rounded m-4 text-black"
+        onClick={() => setCount(count + 1)}
+      >
+        Count: {count}
+      </button>
     </div>
   )
 }

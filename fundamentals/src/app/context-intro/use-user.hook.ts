@@ -14,7 +14,7 @@ async function fetcher(endpoint: string) {
 }
 
 export function useUser() {
-  const { data, error } = useSWR(ENDPOINT, fetcher)
+  const { data } = useSWR(ENDPOINT, fetcher)
 
   return data?.user
 }
