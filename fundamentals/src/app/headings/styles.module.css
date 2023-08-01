@@ -1,0 +1,23 @@
+.h1 {
+  @apply text-5xl my-8 pb-2 border-b border-white font-semibold
+}
+
+.h2 {
+  @apply text-4xl my-4 pb-2 border-b border-white
+}
+
+.h3 {
+  @apply text-2xl my-2 pb-2 font-semibold
+}
+
+.h4 {
+  @apply text-xl
+}
+
+.h5 {
+  @apply text-lg
+}
+
+.h6 {
+  @apply font-bold
+}

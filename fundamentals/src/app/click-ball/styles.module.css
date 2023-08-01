@@ -1,0 +1,70 @@
+@keyframes move {
+  0% {
+    transform: translate(150px, 40px)
+  }
+  10% {
+    transform: translate(10px, 150px)
+  }
+  20% {
+    transform: translate(0px, 0px)
+  }
+  30% {
+    transform: translate(170px, 170px)
+  }
+  40% {
+    transform: translate(100px, 170px)
+  }
+  50% {
+    transform: translate(20px, 50px)
+  }
+  60% {
+    transform: translate(130px, 10px)
+  }
+  70% {
+    transform: translate(170px, 80px)
+  }
+  80% {
+    transform: translate(0px, 170px)
+  }
+  90% {
+    transform: translate(80px, 80px)
+  }
+  100% {
+    transform: translate(150px, 40px)
+  }
+}
+
+.container {
+  width: 250px;
+  height: 250px;
+}
+
+.ball, .bomb {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 9999px;
+}
+
+.ball {
+  background-color: pink;
+}
+
+.bomb {
+  font-size: 40px;
+  background: transparent;
+  transform: rotate(30deg)
+}
+
+/* @media (condition: value) */
+@media (prefers-reduced-motion: no-preference) {
+  .ball {
+    animation: move 8000ms ease-in-out infinite alternate;
+  }
+  .bomb {
+    animation: move 12000ms ease-in-out infinite alternate;
+  }
+}

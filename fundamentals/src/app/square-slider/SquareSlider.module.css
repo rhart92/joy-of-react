@@ -1,0 +1,11 @@
+.squareSlider {
+  --handle-size: 16px;
+  --handle-radius: 1px;
+  --track-size: 22px;
+  --outline-width: 0px;
+}
+
+.squareSlider::-webkit-slider-runnable-track {
+  padding-left: 3px;
+  padding-right: 3px;
+}

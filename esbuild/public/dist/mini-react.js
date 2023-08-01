@@ -1,0 +1,2 @@
+"use strict";(()=>{function o(e,i){let t=document.createElement(e.type);for(let[n,p]of Object.entries(e.props))t.setAttribute(n,p);if(typeof e.children=="string"){let n=document.createTextNode(e.children);t.appendChild(n)}else o(e.children,t);i.appendChild(t)}var c={type:"a",props:{href:"https://www.wikipedia.org"},children:{type:"p",props:{href:"https://www.wikipedia.org",style:"background: lightgreen;"},children:"hello"}},r=document.getElementById("root");console.log(r);o(c,r);})();
+//# sourceMappingURL=mini-react.js.map

@@ -1,0 +1,32 @@
+/* To use Next.js across all of the exercises I neglected to use CSS variables. */
+/* TODO: Read about CSS variables with React https://www.joshwcomeau.com/css/css-variables-for-react-devs/ */
+/* TODO: Read about why not use Component libraries -- https://www.smashingmagazine.com/2022/05/you-dont-need-ui-framework/ */
+/* TIL: Digital Ocean called their design system "Walrus" -- https://www.digitalocean.com/blog/introducing-walrus-digitaloceans-reimagined-design */
+/* TIL: Khan Academy called their Component Library "Wonder Blocks" -- https://khan.github.io/wonder-blocks/?path=/story/overview--page */
+/* TIL: In terms of an analogy, the design system is like a recipe book. The component library is the set of prepared ingredients required — the chopped tomatoes, the puréed carrots. And then the web application is the finished meal. */
+/* TIL: There are component libraries that are un-opinionated about design like https://www.radix-ui.com/ */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 0.5px 1px hsl(0deg 0% 0% / 0.2),
+    0px 1px 2px hsl(0deg 0% 0% / 0.15), 0px 2px 4px hsl(0deg 0% 0% / 0.1);
+}
+
+.elevationOne {
+  box-shadow: 0px 0.5px 1px hsl(0deg 0% 0% / 0.2),
+    0px 1px 2px hsl(0deg 0% 0% / 0.15), 0px 2px 4px hsl(0deg 0% 0% / 0.1);
+}
+
+.elevationTwo {
+  box-shadow: 0px 1px 2px hsl(0deg 0% 0% / 0.2),
+    0px 2px 4px hsl(0deg 0% 0% / 0.15), 0px 4px 8px hsl(0deg 0% 0% / 0.15),
+    0px 8px 16px hsl(0deg 0% 0% / 0.1);
+}
+
+.elevationThree {
+  box-shadow: 0px 1px 2px hsl(0deg 0% 0% / 0.15),
+    0px 2px 4px hsl(0deg 0% 0% / 0.15), 0px 4px 8px hsl(0deg 0% 0% / 0.125),
+    0px 8px 16px hsl(0deg 0% 0% / 0.125), 0px 16px 32px hsl(0deg 0% 0% / 0.1),
+    0px 32px 64px hsl(0deg 0% 0% / 0.1);
+}

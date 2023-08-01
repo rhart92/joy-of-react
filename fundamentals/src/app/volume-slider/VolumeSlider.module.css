@@ -1,0 +1,5 @@
+.volumeSlider {
+  --handle-size: 12px;
+  --handle-color: green;
+  --handle-active-color: lightgreen;
+}

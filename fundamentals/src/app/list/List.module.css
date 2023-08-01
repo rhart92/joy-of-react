@@ -1,0 +1,12 @@
+.wrapper {
+  font-size: 1.25rem;
+  padding: 0px;
+}
+
+.wrapper li {
+  margin-bottom: 0.5em;
+}
+
+.wrapper li::marker {
+  color: hsl(345deg 100% 50%);
+}

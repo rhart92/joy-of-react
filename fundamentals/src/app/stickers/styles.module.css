@@ -1,0 +1,16 @@
+.fullPageButton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: skyblue;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sticker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(4px 8px 0px hsl(250deg 33% 50% / 0.5));
+}

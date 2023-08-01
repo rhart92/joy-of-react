@@ -1,0 +1,53 @@
+.wrapper {
+  padding: 24px;
+  background-color: hsl(210deg, 55%, 92%);
+  border-left: 3px solid hsl(245deg, 100%, 60%);
+  border-radius: 3px 6px 6px 3px;
+  color: black;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.notice-bg {
+  background-color: var(--notice-bg);
+}
+.warning-bg {
+  background-color: var(--warning-bg);
+}
+.error-bg {
+  background-color: var(--error-bg);
+}
+.success-bg {
+  background-color: var(--success-bg);
+}
+
+.notice {
+  border-color: var(--notice);
+}
+.warning {
+  border-color: var(--warning);
+}
+.error {
+  border-color: var(--error);
+}
+.success {
+  border-color: var(--success)
+}
+
+/* Sad to do this way where we have so many small classes :( */
+.notice-color {
+  color: var(--notice);
+}
+.warning-color {
+  color: var(--warning);
+}
+.error-color {
+  color: var(--error);
+}
+.success-color {
+  color: var(--success)
+}

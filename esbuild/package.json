@@ -1,0 +1,33 @@
+{
+    "name": "esbuild",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build-single-file": "esbuild index.ts --outfile=index.js && node index.js && rm index.js",
+        "build-react-server-component": "esbuild src/server.tsx --bundle --outfile=server.js && node server.js && rm server.js",
+        "start": "node -r esbuild-register express.ts",
+        "build-app": "node browser-builder.js",
+        "dev": "nodemon --exec \"npm run build-app && node -r esbuild-register express.ts\" -e .ts,.tsx",
+        "devOnly": "nodemon --exec \"npm run build-app\" -e .ts,.tsx",
+        "webpack": "webpack server --mode development ./public/index.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/express": "^4.17.17",
+        "@types/react": "^18.2.15",
+        "@types/react-dom": "^18.2.7",
+        "esbuild": "^0.18.14",
+        "esbuild-register": "^3.4.2",
+        "express": "^4.18.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
+    }
+}

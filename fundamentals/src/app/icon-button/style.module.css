@@ -1,0 +1,10 @@
+.button:active > .icon {
+  @apply scale-90;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 50ms;
+}
+
+.button:hover > .icon {
+  @apply bg-purple-600;
+}

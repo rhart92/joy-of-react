@@ -1,0 +1,11 @@
+.coin {
+  transition: 200ms ease-in-out;
+}
+
+.coin:hover {
+  transform: scale(105%)
+}
+
+.coin:active {
+  transform: scale(95%)
+}

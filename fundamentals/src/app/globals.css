@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  /* Sidenote styles */
+  --notice-bg: hsl(210deg 55% 92%);
+  --warning-bg: hsl(38deg 100% 50% / 0.1);
+  --error-bg: hsl(340deg 95% 43% / 0.1);
+  --success-bg: hsl(160deg 100% 40% / 0.1);
+
+  --notice: hsl(245deg 100% 60%);
+  --warning: hsl(30deg 100% 50%);
+  --error: hsl(340deg 95% 60%);
+  --success: hsl(160deg 100% 40%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}

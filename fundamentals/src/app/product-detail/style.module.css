@@ -1,0 +1,4 @@
+.star.filled polygon {
+  /* `currentColor` allows SVGs to inherit the `color` attribute from a parent */
+  fill: currentColor;
+}

@@ -1,0 +1,57 @@
+.item {
+  border: 2px solid;
+  border-bottom: 0px;
+  background: white;
+  overflow: hidden;
+  color: black;
+}
+.trigger {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: left;
+  outline: none;
+}
+
+.content {
+  border-top: 1px solid hsl(0deg 0% 0% / 0.75);
+  background: hsl(130deg 100% 95%);
+  padding: 8px 16px 16px;
+  animation: fadeIn 200ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+.trigger:focus-visible {
+  background: hsl(60deg 100% 70%);
+}
+.item:first-of-type {
+  border-radius: 8px 8px 0px 0px;
+}
+.item:last-of-type {
+  border-radius: 0px 0px 8px 8px;
+  border-bottom: 2px solid;
+}
+.item:not(:last-of-type) .content {
+  padding-bottom: 24px;
+}
+.trigger svg {
+  display: block;
+  flex-shrink: 0;
+  transform: translateY(3px);
+}
+
+/* From the docs (https://www.radix-ui.com/docs/primitives/components/accordion#rotated-icon-when-open) */
+.trigger svg {
+  transition: transform 300ms;
+}
+.trigger[data-state='open'] > svg {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+
+        // This is needed because ES modules do not resolve non-relative imports.
+        // https://github.com/babel/babel/issues/10237#issuecomment-513028440
+        "moduleResolution": "Node",
+
+        // This is needed because many of our node_modules use `module.exports = X`.
+        // and we need to map that into `export default X` for use as ES modules.
+        "allowSyntheticDefaultImports": true,
+
+        // We should eventually set to true, ignoring for the sake of upgrading TS.
+        "useDefineForClassFields": false,
+
+        // Type-safety
+        "strict": true,
+        "suppressImplicitAnyIndexErrors": true,
+
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "allowJs": true,
+        "checkJs": false,
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "jsx": "react",
+        "lib": ["ES2021", "ESNext.AsyncIterable", "DOM", "ScriptHost"]
+    },
+    "include": [],
+    "exclude": []
+}

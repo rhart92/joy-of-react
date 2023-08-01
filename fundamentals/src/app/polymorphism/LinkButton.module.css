@@ -1,0 +1,19 @@
+.button {
+  /* Revert all default button/link styles: */
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  
+  color: #244424;
+  font-weight: 500;
+  cursor: pointer;
+}
+.button:hover {
+  text-decoration: underline;
+}
+.button:focus {
+  outline-color: inherit;
+  outline-offset: 4px;
+}
